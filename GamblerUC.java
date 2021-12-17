@@ -27,7 +27,25 @@ class GamblerUC
 			while (cash > 0 && cash < goal)
 			{
 				bets++;
+
+				if (Math.random() < 0.5)
+				{
+					cash++;
+				}
+				else
+				{
+					cash--;
+				}
+			}
+
+			if (cash == goal)
+			{
+				win++;
 			}
 		}
+
+		System.out.println(win+" win of "+noOfTime);
+		System.out.println("Percent of games won = " + 100.0 * win / noOfTime);
+		System.out.println("Avg # bets           = " + 1.0 * bets / noOfTime);
 	}
 }
