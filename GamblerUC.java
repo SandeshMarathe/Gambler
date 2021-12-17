@@ -17,7 +17,17 @@ class GamblerUC
 		System.out.println("Enter the Number of Time :");
 		noOfTime = scanner.nextInt();
 
-		int bet = 0;
-		int win = 0;
+		int bets = 0;	//Total Number of Bets Made
+		int win = 0;	//Total Number of Games Won
+
+		for (int i = 0; i < noOfTime; i++)
+		{
+			int cash = stake;
+
+			while (cash > 0 && cash < goal)
+			{
+				bets++;
+			}
+		}
 	}
 }
