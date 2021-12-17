@@ -16,5 +16,8 @@ class GamblerUC
 
 		System.out.println("Enter the Number of Time :");
 		noOfTime = scanner.nextInt();
+
+		int bet = 0;
+		int win = 0;
 	}
 }
